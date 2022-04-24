@@ -25,8 +25,8 @@ public class MusicProgram {
         }
 
         jukebox.play("Waiting On A War");
-        jukebox.play("Twist and shout");
-        jukebox.play("What's your country song");
+        jukebox.play("Twist and Shout");
+        jukebox.play("What's Your Country Cong");
         jukebox.play("Free Fallin");
     }
 

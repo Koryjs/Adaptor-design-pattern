@@ -1,5 +1,13 @@
+/**
+ * Used to help convert Tune objects into Song objects
+ * @author Kory Singleton
+ */
 public class SongAdapter extends Song {
     private Tune tune;
+    /**
+     * Constructor for SongAdapter class
+     * @param tune a Tune object instance
+     */
     public SongAdapter(Tune tune) {
         this.tune = tune;
     }
@@ -7,7 +15,6 @@ public class SongAdapter extends Song {
         return tune.getDisplayTitle().substring(0, tune.getDisplayTitle().indexOf(": "));
     }
     public String getAlbum() {
-        //System.out.println(tune.getDisplayTitle().substring(tune.getDisplayTitle().indexOf(": ")+2));
         return tune.getDisplayTitle().substring(tune.getDisplayTitle().indexOf(": ")+2);
     }
     public String getArtistFirstName() {
